@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Eliminar</title>
+    <style>
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, sans-serif;
+            background-color: lavenderblush;
+        }
+        .container {
+            width: 350px;
+            margin: 0 auto;
+            margin-top: 20px;
+            background-color: lavender;
+            padding: 70px;
+            border-radius: 8px;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+        }
+        h2 {
+        text-align: center;
+        color: black;
+        }
+        input[type="nombre"] {
+            width: 50%;
+            padding: 5px;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: medium;
+            border: 1px solid darkcyan;
+            border-radius: 3px;
+        }
+        input[type="ap"] {
+            width: 50%;
+            padding: 5px;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: medium;
+            border: 1px solid darkcyan;
+            border-radius: 3px;
+        }
+        input[type="am"] {
+            width: 50%;
+            padding: 5px;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: medium;
+            border: 1px solid darkcyan;
+            border-radius: 3px;
+        }
+        input[type="submit"] {
+            width: 30%;
+            background-color: lightblue;
+            color: black;
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: medium;
+            padding: 8px;
+            border: none;
+            border-radius: 1px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>ELIMINAR PACIENTE</h2>
+        <form class="from">
+            <div class="inputs">
+                <label for="nombre"> Nombre: &nbsp;&nbsp;&nbsp;</label>
+                <input type="nombre" id="nombre" name="nombre" required><br><br>
+                <label for="ap"> Apellido P: </label>
+                <input type="ap" id="ap" name="ap" required><br><br>
+                <label for="am"> Apellido M: </label>
+                <input type="am" id="am" name="am" required><br><br><br><br>
+                <center><input type="submit" value="Eliminar"></center>
+            </div>
+        </form>  
+    </div>
+</body>
+</html>

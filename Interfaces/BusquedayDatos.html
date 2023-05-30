@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Busqueda</title>
+    <style>
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, sans-serif;
+            background-color: lavenderblush;
+        }
+        .container {
+            width: 550px;
+            margin: 0 auto;
+            margin-top: 20px;
+            background-color: lavender;
+            padding: 100px;
+            border-radius: 8px;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+        }
+        input[type="bus"] {
+            width: 45%;
+            padding: 5px;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: medium;
+            border: 1px solid darkcyan;
+            border-radius: 3px;
+        }
+        h2 {
+        text-align: center;
+        color: black;
+        }
+        table {
+        border-collapse: separate;
+        width: 100%;
+        }
+        th, td {
+        border: 2px solid lightblue;
+        padding: 10px;
+        }
+        th {
+        background-color: lightgray;
+        }
+        tr:nth-child(even) {
+        background-color: lightgray;
+        }
+        input[type="submit"] {
+            width: 75%;
+            background-color: lightblue;
+            color: black;
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: medium;
+            padding: 8px;
+            border: none;
+            border-radius: 1px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>SECCION DE BUSQUEDA</h2><br><br><br><br>
+        <form class="from">
+            <center><label for="bus"> Busqueda: </label><br><br>
+                <input type="bus" id="bus" name="bus"></center><br><br><br><br>
+            <table>
+                <thead>
+                  <tr>
+                    <th>Pacientes</th>
+                    <th>Medicos</th>
+                    <th>Diagnosticos</th>
+                    <th>Recetas</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Paciente 1</td>
+                    <td>Medico 1</td>
+                    <td>Diagnostico 1</td>
+                    <td><center><input type="submit" value="Ver"><br><br>
+                        <input type="submit" value="Imprimir"></center></td>
+                  </tr>
+                  <tr>
+                    <td>Paciente 2</td>
+                    <td>Medico 2</td>
+                    <td>Diagnostico 2</td>
+                    <td><center><input type="submit" value="Ver"><br><br>
+                        <input type="submit" value="Imprimir"></center></td>
+                  </tr>
+                  <tr>
+                    <td>Paciente 3</td>
+                    <td>Medico 3</td>
+                    <td>Diagnostico 3</td>
+                    <td><center><input type="submit" value="Ver"><br><br>
+                        <input type="submit" value="Imprimir"></center></td>
+                  </tr>
+                  <tr>
+                    <td>Paciente 4</td>
+                    <td>Medico 4</td>
+                    <td>Diagnostico 4</td>
+                    <td><center><input type="submit" value="Ver"><br><br>
+                        <input type="submit" value="Imprimir"></center></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+        </form>  
+    </div>
+</body>
+</html>

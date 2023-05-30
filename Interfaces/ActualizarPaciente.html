@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Actualizar</title>
+    <style>
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, sans-serif;
+            background-color: lavenderblush;
+        }
+        .container {
+            width: 450px;
+            margin: 0 auto;
+            margin-top: 20px;
+            background-color: lavender;
+            padding: 70px;
+            border-radius: 8px;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+        }
+        h2 {
+        text-align: center;
+        color: black;
+        }
+        input[type="nombre"] {
+            width: 45%;
+            padding: 5px;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: medium;
+            border: 1px solid darkcyan;
+            border-radius: 3px;
+        }
+        input[type="ap"] {
+            width: 45%;
+            padding: 5px;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: medium;
+            border: 1px solid darkcyan;
+            border-radius: 3px;
+        }
+        input[type="am"] {
+            width: 44.5%;
+            padding: 5px;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: medium;
+            border: 1px solid darkcyan;
+            border-radius: 3px;
+        }
+        input[type="submit"] {
+            width: 30%;
+            background-color: lightblue;
+            color: black;
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: medium;
+            padding: 8px;
+            border: none;
+            border-radius: 2px;
+            cursor: pointer;
+        }
+        input[type="date"] {
+            width: 30%;
+            background-color: lightsteelblue;
+            padding: 5px;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: medium;
+            border: 1px solid darkcyan;
+            border-radius: 3px;
+        }
+        select {
+            width: 40%;
+            background-color: lightgrey;
+            color: black;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: medium;
+            padding: 5px;
+            border: 1px solid lightseagreen;
+            border-radius: 5px;
+            cursor: pointer;
+            background-repeat: no-repeat;
+            background-position: right center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>ACTUALIZAR PACIENTES</h2>
+        <form class="from">
+            <div class="inputs">
+                <label for="nombre"> Nombre(s): </label>
+                <input type="nombre" id="nombre" name="nombre" required><br><br>
+                <label for="ap"> Apellido P: </label>
+                <input type="ap" id="ap" name="ap" required><br><br>
+                <label for="am"> Apellido M: </label>
+                <input type="am" id="am" name="am" required><br><br><br><br>
+                <label for="daate"> Fecha de Nacimiento: </label>
+                <input type="date" name="fechacita" list="listafechascita"><br><br><br><br>
+            </div>
+            <div class="form-group">
+                <label for="medico">Medico Responsable:</label>
+                <select id="medico" name="Medico">
+            <option value="med1">Medico 1</option>
+            <option value="med2">Medico 2</option>
+            <option value="med3">Medico 3</option>
+                </select><br><br>
+                <label for="enfermedad">Enfermedad Cronica: </label>
+                <select id="enfermedad" name="Enfermedad">
+            <option value="enf1">Enfermedad 1</option>
+            <option value="enf2">Enfermedad 2</option>
+            <option value="enf3">Enfermedad 3</option>
+                </select><br><br>
+                <label for="alergias">Alergias: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
+                <select id="alergias" name="alergias">
+            <option value="alergia1">Alergia 1</option>
+            <option value="alergia2">Alergia 2</option>
+            <option value="alergia3">Alergia 3</option>
+                </select><br><br>
+                <label for="antecedentes">Antecedentes Fam: &nbsp;&nbsp;</label>
+                <select id="antecedentes" name="antecedentes">
+            <option value="ant1">Antecedente 1</option>
+            <option value="ant2">Antecedente 2</option>
+            <option value="ant3">Antecedente 3</option>
+                </select><br><br><br><br>
+                <center><input type="submit" value="Actualizar"></center>
+        </div>
+        </form>  
+        </div>
+</body>
+</html>

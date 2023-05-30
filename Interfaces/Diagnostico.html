@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exploracion y Diagnostico</title>
+    <style>
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, sans-serif;
+            background-color: lavenderblush;
+        }
+        .container {
+            width: 450px;
+            margin: 0 auto;
+            margin-top: 20px;
+            background-color: lavender;
+            padding: 70px;
+            border-radius: 8px;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+        }
+        h2 {
+        text-align: center;
+        color: black;
+        }
+        input[type="folio"] {
+            width: 30%;
+            padding: 5px;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: medium;
+            border: 1px solid darkcyan;
+            border-radius: 3px;
+        }
+        input[type="peso"] {
+            width: 40%;
+            padding: 5px;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: medium;
+            border: 1px solid darkcyan;
+            border-radius: 3px;
+        }
+        input[type="altura"] {
+            width: 40%;
+            padding: 5px;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: medium;
+            border: 1px solid darkcyan;
+            border-radius: 3px;
+        }
+        input[type="temp"] {
+            width: 40%;
+            padding: 5px;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: medium;
+            border: 1px solid darkcyan;
+            border-radius: 3px;
+        }
+        input[type="lat"] {
+            width: 40%;
+            padding: 5px;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: medium;
+            border: 1px solid darkcyan;
+            border-radius: 3px;
+        }
+        input[type="sat"] {
+            width: 40%;
+            padding: 5px;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: medium;
+            border: 1px solid darkcyan;
+            border-radius: 3px;
+        }
+        input[type="sint"] {
+            width: 40%;
+            padding: 5px;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: medium;
+            border: 1px solid darkcyan;
+            border-radius: 3px;
+        }
+        input[type="trat"] {
+            width: 40%;
+            padding: 5px;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: medium;
+            border: 1px solid darkcyan;
+            border-radius: 3px;
+        }
+        input[type="submit"] {
+            width: 40%;
+            background-color: lightblue;
+            color: black;
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: medium;
+            padding: 8px;
+            border: none;
+            border-radius: 1px;
+            cursor: pointer;
+        }
+        select {
+            width: 45%;
+            background-color: lightgrey;
+            color: black;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: medium;
+            padding: 5px;
+            border: 1px solid lightseagreen;
+            border-radius: 5px;
+            cursor: pointer;
+            background-repeat: no-repeat;
+            background-position: right center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>DIAGNOSTICO</h2>
+        <form class="from">
+            <div class="inputs">
+                <label for="folio"> Folio: </label>
+                <input type="folio" id="folio" name="folio" required><br><br><br><br><br><br>
+                <label for="peso"> Peso: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="peso" id="peso" name="peso" required><br><br>
+                <label for="altura"> Altura: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="altura" id="altura" name="altura" required><br><br>
+                <label for="temp"> Temperatura: </label>
+                <input type="temp" id="temp" name="temp" required><br><br>
+                <label for="lat"> Latidos: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="lat" id="lat" name="lat" required><br><br>
+                <label for="sat"> Saturacion: &nbsp;&nbsp;</label>
+                <input type="sat" id="sat" name="sat" required><br><br>
+                <label for="sint"> Sintomas: &nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="sint" id="sint" name="sint" required><br><br>
+                <label for="trat"> Tratamiento: </label>
+                <input type="trat" id="trat" name="trat" required><br><br><br><br>
+            </div>
+            <div class="form-group">
+                <label for="estudios"> Estudios:</label>
+                    <select id="estudios" name="estudios">
+                    <option value="est1">Estudios 1</option>
+                    <option value="est2">Estudios 2</option>
+                    <option value="est3">Estudios 3</option><br><br>
+                    </select><br><br><br><br>
+                    <center><input type="submit" value="Generar Receta"></center>
+                </div>
+        </form>  
+    </div>
+</body>
+</html>

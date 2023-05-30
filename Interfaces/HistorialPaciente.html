@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Historial</title>
+    <style>
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, sans-serif;
+            background-color: lavenderblush;
+        }
+        .container {
+            width: 500px;
+            margin: 0 auto;
+            margin-top: 20px;
+            background-color: lavender;
+            padding: 100px;
+            border-radius: 8px;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+        }
+        input[type="folio"] {
+            width: 45%;
+            padding: 5px;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: medium;
+            border: 1px solid darkcyan;
+            border-radius: 3px;
+        }
+        h2 {
+        text-align: center;
+        color: black;
+        }
+        table {
+        border-collapse: separate;
+        width: 100%;
+        }
+        th, td {
+        border: 2px solid lightblue;
+        padding: 5px;
+        }
+        th {
+        background-color: lightgray;
+        }
+        tr:nth-child(even) {
+        background-color: lightgray;
+        }
+        input[type="submit"] {
+            width: 15%;
+            background-color: lightblue;
+            color: black;
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: medium;
+            padding: 8px;
+            border: none;
+            border-radius: 1px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Historial Paciente</h2><br><br>
+        <form class="from">
+            <center><label for="folio"> Folio: </label>
+                <input type="folio" id="folio" name="folio"></center><br><br>
+                <center><input type="submit" value="Buscar"></center><br><br><br><br>
+            <table>
+                <thead>
+                  <tr>
+                    <th>Paciente</th>
+                    <th>Medico</th>
+                    <th>EnfermedadesC</th>
+                    <th>Alergias</th>
+                    <th>AntecedentesF</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Paciente1</td>
+                    <td>Medico1</td>
+                    <td>Enfermedad1</td>
+                    <td>Alergia1</td>
+                    <td>Antecedente1</td>
+                  </tr>
+                </tbody>
+              </table>
+        </form>  
+    </div>
+</body>
+</html>
