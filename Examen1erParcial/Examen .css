@@ -1,0 +1,51 @@
+
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, sans-serif, #201976;
+    background-color: lavenderblush;
+}
+h2 {
+text-align: center;
+color: #201976;
+}
+.container {
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: lightyellow;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+}
+input[type="nombre"] {
+    width: 40%;
+    padding: 3px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    border: 1px solid darkcyan;
+    border-radius: 3px;
+}
+input[type="carrera"] {
+    width: 40%;
+    padding: 3px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    border: 1px solid darkcyan;
+    border-radius: 3px;
+}
+input[type="edad"] {
+    width: 40%;
+    padding: 3px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    border: 1px solid darkcyan;
+    border-radius: 3px;
+}
+input[type="cali"] {
+    width: 40%;
+    padding: 3px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    border: 1px solid darkcyan;
+    border-radius: 3px;
+}
