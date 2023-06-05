@@ -65,11 +65,10 @@ class ControladorAlmacenB:
         else:
             try:
                 cursor4=conex.cursor()
-                sqlUpdate1="update Productos set nombre=? where id= "+id2
-                datos2=(nom2)
-                cursor4.execute(sqlUpdate1,datos2)
+                sqlUpdate1='update Productos set nombre=? where id= '+id2
+                cursor4.execute(sqlUpdate1,nom2)
                 conex.commit()
-                conex.close()
+                messagebox.showinfo("Listo","Se actualizo el Nombre")
             except sqlite3.OperationalError:
                 print("Error")
     
@@ -120,3 +119,22 @@ class ControladorAlmacenB:
                 conex.close()
             except sqlite3.OperationalError:
                 print("Error")
+    
+    def promedio(self,precio):
+        conex=self.conexionBD()
+        try:
+            cursor8=conex.cursor()
+            sqlUpdate4="select precio from Productos"
+            cursor8.execute(sqlUpdate4)
+            if precio:
+                total=sum(precio[0] for precio in precio)
+                precio_promedio = total / len(precio)
+                messagebox.showinfo("Promedio",precio_promedio)
+            else:
+                messagebox.showinfo("Promedio","No hay precios en la bd")
+            conex.commit()
+            conex.close()
+        except sqlite3.OperationalError:
+                print("Error")
+                
+    
