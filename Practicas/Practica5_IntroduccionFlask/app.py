@@ -16,7 +16,7 @@ def index():
     CC=mysql.connection.cursor()
     CC.execute('select * from tb_albums')
     conAlbums=CC.fetchall()
-    print(conAlbums)
+    #print(conAlbums)
     return render_template('index.html',listAlbums=conAlbums)
 
 #ruta http:localhost:5000/guaradr tipo POST para Insert
@@ -57,6 +57,22 @@ def actualizar(id):
     flash('Se actualizo el Album '+Vartitulo)
     return redirect(url_for('index'))
 
+@app.route('/borrar/<id>')
+def borrar(id):
+    cursorID=mysql.connection.cursor()
+    cursorID.execute('select * from tb_albums where id=%s',(id))
+    albumELi=cursorID.fetchone()
+    return render_template('eliminarAlbum.html',albumEli=albumELi)
+
+@app.route('/eliminar/<id>',methods=['POST'])
+def eliminar(id):
+    if request.method =='POST':
+        curEli=mysql.connection.cursor()
+        curEli.execute('delete from tb_albums where id= %s',(id))
+        mysql.connection.commit()
+        
+    flash('Se Elimino el Album ')
+    return redirect(url_for('index'))
 
 #ejecucion del Servidor en el Puerto 5000
 if __name__ == '__main__':
