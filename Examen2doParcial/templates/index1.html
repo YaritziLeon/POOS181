@@ -9,6 +9,15 @@
     <br>
     <h1>Floreria</h1>
     <br>
+    <br>
+    {% with mensajes=get_flashed_messages() %}
+        {% if mensajes %}
+            {% for msj in mensajes %}
+                <h3> {{msj}} </h3>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+    <br>
     <form action="/ingresar" method="POST">
         <input type="text" name="txtNombre" placeholder="Escribe el Nombre" >
         <input type="int" name="Cantidad" placeholder="Escribe la cantidad" >
