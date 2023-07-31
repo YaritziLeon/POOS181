@@ -1,11 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CRUD ALBUMS</title>
-</head>
-<body>
+
+{% extends 'plantilla.html' %} -heredar el archivo-
+{% block body %}
+
     <br>
     <br>
     <h1>Gestion de Albums</h1>
@@ -52,6 +48,4 @@
             {% endfor %}
         </tbody>
     </table>
-
-</body>
-</html>
+    {% endblock %}
