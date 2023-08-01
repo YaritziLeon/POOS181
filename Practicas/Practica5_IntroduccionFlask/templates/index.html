@@ -15,7 +15,8 @@
     {% endwith %}
 
     <div class="row container">
-        <div class="col-md-5">
+        <div class="col-md-5 margin-3">
+            <h1>Registro de Albums</h1>
             <div class="card card-body mb-5">
                 <form action="/guardar" method="POST">
                     <div class="mb-3">
@@ -33,7 +34,7 @@
                 </form>
             </div> <!--card body-->
         </div> <!--col 5-->
-        <div class="col-md-7 mb-5">
+        <div class="col-md-6 margin-3">
             <h1>Albums Guardados</h1>
     
     <table class="table table-info table-striped">
@@ -54,8 +55,8 @@
                 <td> {{alb.2}} </td>
                 <td> {{alb.3}} </td>
                 <td>
-                    <a href=/editar/{{alb.0}} class="btn btn-warning"><i class="bi bi-pencil-square"></i></a>
-                    <a href=/borrar/{{alb.0}} class="btn btn-danger"><i class="bi bi-trash"></i></a>
+                    <a href=/editar/{{alb.0}} class="btn btn-outline-warning"><i class="bi bi-pencil-square"></i></a>
+                    <a href=/borrar/{{alb.0}} class="btn btn-outline-danger"><i class="bi bi-trash"></i></a>
                 </td>
             </tr>
             {% endfor %}
